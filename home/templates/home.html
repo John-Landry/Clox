@@ -10,13 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
-        /* html {
-            url(static/snow/giphy.gif),
-            url(static/snow/snow.gif),
-            url(/static/snow/snow-gif-7.gif),
-            url(static/snow/snow02.gif),
-            url(static/snow/Z3ut.gif),
-        } */
+        html {}
 
         /* body {
             margin: 0;
@@ -26,19 +20,18 @@
 
         }
          */
-        body {
-            margin: 0;
-            background-image: url(static/snow/birds.gif);
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        body {}
 
         table {
+            background-color: rgb(6, 19, 114);
+            background-image: url(static/snow/z3ut.gif), url(static/snow/birds.gif);
             border-collapse: collapse;
+            background-position: center, center;
+            background-repeat: no-repeat;
             border: 0px;
             width: 95%;
             height: 95vh;
-            background-color: rgb(6, 19, 114);
+            /* background-color: rgb(95, 96, 102); */
 
         }
 
@@ -83,25 +76,44 @@
         } */
 
         .a1 {
-            background-image: url(static/snow/snow02.gif), url(static/snow/327222_55926-529528857.gif);
+            background-image: url(static/snow/sno.gif), url(static/snow/327222_55926-529528857.gif);
             background-position: top top;
             background-repeat: no-repeat no-repeat;
-            opacity: 0.3 0.2;
         }
 
         .a2 {
             background-image: url(static/snow/snow02.gif), url(static/snow/327222_55926-529528857.gif);
             background-position: top top;
             background-repeat: no-repeat no-repeat;
-            opacity: 0.3 0.2;
+
         }
 
         .a3 {
-            background-image: url(static/snow/snow02.gif), url(static/snow/327222_55926-529528857.gif);
-            background-position: top top;
-            background-repeat: repeat no-repeat;
-            opacity: 0.3 0.2;
+            background-image: url(static/snow/giphy.gif), url(static/snow/327222_55926-529528857.gif);
+            background-position: top, top;
+            background-repeat: repeat, no-repeat;
         }
+
+        .b1 {
+            background-image: url(static/snow/z3ut.gif), url(static/snow/327222_55926-529528857.gif);
+            background-position: top left, top;
+            background-repeat: no-repeat, no-repeat;
+        }
+
+        .b2 {
+            background-image: url(static/snow/z3ut.gif), url(static/snow/giphy.gif), url(static/snow/327222_55926-529528857.gif);
+            background-position: top, top, top;
+            background-repeat: repeat, repeat, no-repeat;
+        }
+
+        .b3 {
+            background-image: url(static/snow/snow-gif-7.gif), url(static/snow/327222_55926-529528857.gif);
+            background-position: top, top;
+            background-repeat: repeat, no-repeat;
+
+        }
+
+
 
         /* 
         .birds {
@@ -127,8 +139,8 @@
         </tr>
         </tr>
         <tr>
-            <td class="icicles"></td>
-            <td>
+            <td class="b1"></td>
+            <td class="b2">
 
                 <div class="content">
                     <form action="" method="GET" id="current-time" id="my-bg">
@@ -139,7 +151,7 @@
                     <div>{{date}}</div>
                 </div>
             </td>
-            <td></td>
+            <td class="b3"></td>
         </tr>
         <tr>
             <td></td>
