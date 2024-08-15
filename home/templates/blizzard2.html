@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Blizzard Clock</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        html {
+            /* background-image: url(static/snow/snow.webp); */
+        }
+
+        body {
+            margin: auto;
+            vertical-align: middle;
+            background-image: url(static/snow/snow.webp);
+            background-position: center;
+            background-repeat: repeat;
+
+        }
+
+        table {
+
+
+            margin: auto;
+            background-color: rgb(87, 95, 151);
+            background-image: url(static/snow/z3ut.gif), url(static/snow/birds.gif);
+            border-collapse: collapse;
+            background-position: center, center;
+            background-repeat: no-repeat;
+            border: 0px;
+            width: 95%;
+            height: 95vh;
+            align-self: center;
+            /* background-color: rgb(95, 96, 102); */
+        }
+
+        tr {
+            margin: 0;
+            padding: 0px;
+        }
+
+        td {
+            box-shadow: inset 0 0 24px 15px rgba(236, 244, 246, 0.32);
+            border: 2px solid rgb(117, 62, 62);
+            padding: 0px;
+            width: 33%;
+            height: 33%;
+        }
+
+        .content {
+            z-index: index-1;
+            color: rgb(153, 183, 232);
+            font-family: monospace;
+            text-shadow: 0.05em 0.05em 0.05em rgb(255, 255, 255);
+            text-align: center;
+            font-size: 0.2em;
+        }
+
+        /* 
+        .mytable {
+            height: 100%;
+            /* background-image: url(static/snow/birds.gif);
+            background-position: center;
+            background-repeat: no-repeat; */
+
+
+        /* 
+        .icicles {
+            margin: 0;
+            background-image: url(static/snow/327222_55926-529528857.gif);
+            background-position: top;
+            background-repeat: repeat;
+        } */
+
+        .a1 {
+            background-image: url(static/snow/sno.gif);
+            background-position: top;
+            background-repeat: repeat;
+        }
+
+        .a2 {
+            background-image: url(static/snow/snow02.gif);
+            background-position: top;
+            background-repeat: repeat;
+
+        }
+
+        .a3 {
+            background-image: url(static/snow/giphy.gif);
+            background-position: top;
+            background-repeat: repeat;
+        }
+
+        .b1 {
+            background-image: url(static/snow/snow01.gif);
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .b2 {
+            background-image: url(static/snow/snow01.gif), url(/static/snow/eref.gif), url(static/snow/snow02.gif), url(static/snow/sno.gif), url(static/snow/snow-gif-7.gif), url(static/snow/z3ut.gif), url(static/snow/giphy.gif), url(static/snow/sg-snow.gif), url(static/snow/flakes.gif);
+            background-position: top left;
+            background-repeat: no-repeat;
+        }
+
+        .c2 {
+            background-image: url(static/snow/snow-gif-7.gif), url(static/snow/6595b5_be855e40c2df466b9b66fe3059709f08~mv2-1903038339.gif);
+            background-position: top, top;
+            background-repeat: repeat, no-repeat;
+
+        }
+
+        .c1 {
+            background-image: url(/static/snow/eref.gif);
+            background-position: top;
+            background-repeat: repeat;
+
+        }
+
+        .b3 {
+            background-image: url(static/snow/6595b5_be855e40c2df466b9b66fe3059709f08~mv2-1903038339.gif);
+            background-position: top right, top;
+            background-repeat: no-repeat;
+        }
+
+        .c3 {
+            background-image: url(static/snow/sg-snow.gif), url(static/snow/6595b5_be855e40c2df466b9b66fe3059709f08~mv2-1903038339.gif);
+            background-position: top top;
+            background-repeat: repeat, no-repeat;
+        }
+
+        /* 
+        .birds {
+            background-image: url(static/snow/birds.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+    </style>
+    <script>
+        function getTime() {
+            document.getElementById('current-time').submit();
+        }
+        setInterval(getTime, 1000);
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="c3"></td>
+            <td class="b3"></td>
+            <td class="c2"></td>
+        </tr>
+        </tr>
+        <tr>
+            <td class="b1"></td>
+            <td class="b2">
+
+                <div class="content">
+                    <form action="" method="GET" id="current-time" id="my-bg">
+                    </form>
+                    <p>
+                    <div>{{time}}</div>
+                    <p>
+                    <div>{{date}}</div>
+                </div>
+            </td>
+            <td class="a2"></td>
+        </tr>
+        <tr>
+            <td class="c1"></td>
+            <td class="a3"></td>
+            <td class="a1"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
